@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E300D2A2DA994D300EE7235 /* Portfolio_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E300D292DA994D300EE7235 /* Portfolio_SwiftUIApp.swift */; };
+		7E300D2C2DA994D300EE7235 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E300D2B2DA994D300EE7235 /* ContentView.swift */; };
+		7E300D2E2DA994D500EE7235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E300D2D2DA994D500EE7235 /* Assets.xcassets */; };
+		7E300D322DA994D500EE7235 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E300D312DA994D500EE7235 /* Preview Assets.xcassets */; };
+		7E4FA46C2DB570EE00060DCC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FA46B2DB570EE00060DCC /* CardView.swift */; };
+		7E4FA46E2DB5812300060DCC /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4FA46D2DB5812300060DCC /* CarouselView.swift */; };
+		7E969C1C2DB1A9CE008AACE3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E969C1B2DB1A9CE008AACE3 /* DetailView.swift */; };
+		7E9E77EE2DAED6E600E28E07 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E77ED2DAED6E600E28E07 /* CoinDataService.swift */; };
+		7E9E77F12DAF09FB00E28E07 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E77F02DAF09FB00E28E07 /* Coin.swift */; };
+		7E9E77F32DAF45D300E28E07 /* CoinAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E77F22DAF45D300E28E07 /* CoinAPIError.swift */; };
+		7EA148032DAC753700EA9CA8 /* CoinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA148022DAC753700EA9CA8 /* CoinsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E300D262DA994D300EE7235 /* Portfolio_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E300D292DA994D300EE7235 /* Portfolio_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio_SwiftUIApp.swift; sourceTree = "<group>"; };
+		7E300D2B2DA994D300EE7235 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E300D2D2DA994D500EE7235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E300D2F2DA994D500EE7235 /* Portfolio_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Portfolio_SwiftUI.entitlements; sourceTree = "<group>"; };
+		7E300D312DA994D500EE7235 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E4FA46B2DB570EE00060DCC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7E4FA46D2DB5812300060DCC /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		7E969C1B2DB1A9CE008AACE3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7E9E77ED2DAED6E600E28E07 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		7E9E77F02DAF09FB00E28E07 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		7E9E77F22DAF45D300E28E07 /* CoinAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPIError.swift; sourceTree = "<group>"; };
+		7EA148022DAC753700EA9CA8 /* CoinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E300D232DA994D300EE7235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E300D1D2DA994D300EE7235 = {
+			isa = PBXGroup;
+			children = (
+				7E300D282DA994D300EE7235 /* Portfolio_SwiftUI */,
+				7E300D272DA994D300EE7235 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E300D272DA994D300EE7235 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E300D262DA994D300EE7235 /* Portfolio_SwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E300D282DA994D300EE7235 /* Portfolio_SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7E300D292DA994D300EE7235 /* Portfolio_SwiftUIApp.swift */,
+				7EA148052DAC755600EA9CA8 /* Model */,
+				7EA148062DAC758700EA9CA8 /* ViewModel */,
+				7E300D302DA994D500EE7235 /* Preview Content */,
+				7E9E77EF2DAED73600E28E07 /* Service */,
+				7EA148042DAC754300EA9CA8 /* View */,
+				7E300D2D2DA994D500EE7235 /* Assets.xcassets */,
+				7E300D2F2DA994D500EE7235 /* Portfolio_SwiftUI.entitlements */,
+			);
+			path = Portfolio_SwiftUI;
+			sourceTree = "<group>";
+		};
+		7E300D302DA994D500EE7235 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7E300D312DA994D500EE7235 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E9E77EF2DAED73600E28E07 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7E9E77ED2DAED6E600E28E07 /* CoinDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7EA148042DAC754300EA9CA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E300D2B2DA994D300EE7235 /* ContentView.swift */,
+				7E969C1B2DB1A9CE008AACE3 /* DetailView.swift */,
+				7E4FA46D2DB5812300060DCC /* CarouselView.swift */,
+				7E4FA46B2DB570EE00060DCC /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7EA148052DAC755600EA9CA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E9E77F02DAF09FB00E28E07 /* Coin.swift */,
+				7E9E77F22DAF45D300E28E07 /* CoinAPIError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7EA148062DAC758700EA9CA8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7EA148022DAC753700EA9CA8 /* CoinsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E300D252DA994D300EE7235 /* Portfolio_SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E300D352DA994D500EE7235 /* Build configuration list for PBXNativeTarget "Portfolio_SwiftUI" */;
+			buildPhases = (
+				7E300D222DA994D300EE7235 /* Sources */,
+				7E300D232DA994D300EE7235 /* Frameworks */,
+				7E300D242DA994D300EE7235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Portfolio_SwiftUI;
+			productName = Portfolio_SwiftUI;
+			productReference = 7E300D262DA994D300EE7235 /* Portfolio_SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E300D1E2DA994D300EE7235 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					7E300D252DA994D300EE7235 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 7E300D212DA994D300EE7235 /* Build configuration list for PBXProject "Portfolio_SwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E300D1D2DA994D300EE7235;
+			productRefGroup = 7E300D272DA994D300EE7235 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E300D252DA994D300EE7235 /* Portfolio_SwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E300D242DA994D300EE7235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E300D322DA994D500EE7235 /* Preview Assets.xcassets in Resources */,
+				7E300D2E2DA994D500EE7235 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E300D222DA994D300EE7235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E9E77F32DAF45D300E28E07 /* CoinAPIError.swift in Sources */,
+				7E300D2C2DA994D300EE7235 /* ContentView.swift in Sources */,
+				7E300D2A2DA994D300EE7235 /* Portfolio_SwiftUIApp.swift in Sources */,
+				7E969C1C2DB1A9CE008AACE3 /* DetailView.swift in Sources */,
+				7E4FA46E2DB5812300060DCC /* CarouselView.swift in Sources */,
+				7E9E77EE2DAED6E600E28E07 /* CoinDataService.swift in Sources */,
+				7E9E77F12DAF09FB00E28E07 /* Coin.swift in Sources */,
+				7E4FA46C2DB570EE00060DCC /* CardView.swift in Sources */,
+				7EA148032DAC753700EA9CA8 /* CoinsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7E300D332DA994D500EE7235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E300D342DA994D500EE7235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7E300D362DA994D500EE7235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Portfolio_SwiftUI/Portfolio_SwiftUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Portfolio_SwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wololo.Portfolio-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E300D372DA994D500EE7235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Portfolio_SwiftUI/Portfolio_SwiftUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Portfolio_SwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wololo.Portfolio-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E300D212DA994D300EE7235 /* Build configuration list for PBXProject "Portfolio_SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E300D332DA994D500EE7235 /* Debug */,
+				7E300D342DA994D500EE7235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E300D352DA994D500EE7235 /* Build configuration list for PBXNativeTarget "Portfolio_SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E300D362DA994D500EE7235 /* Debug */,
+				7E300D372DA994D500EE7235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E300D1E2DA994D300EE7235 /* Project object */;
+}
