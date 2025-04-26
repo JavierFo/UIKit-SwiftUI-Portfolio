@@ -16,7 +16,7 @@ class CoinDataService {
         
         do {
             //suspension point in the code
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let (data, _) = try await URLSession.shared.data(from: url)
             
             let coins = try JSONDecoder().decode([Coin].self, from: data)
             
