@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E157BB42DBD9C2C00EF8194 /* swiftUI_PortfoliosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BB32DBD9C2C00EF8194 /* swiftUI_PortfoliosApp.swift */; };
+		7E157BB82DBD9C2E00EF8194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E157BB72DBD9C2E00EF8194 /* Assets.xcassets */; };
+		7E157BBB2DBD9C2E00EF8194 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E157BBA2DBD9C2E00EF8194 /* Preview Assets.xcassets */; };
+		7E157BC32DBD9D7A00EF8194 /* CoinAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BC12DBD9D7A00EF8194 /* CoinAPIError.swift */; };
+		7E157BC42DBD9D7A00EF8194 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BC22DBD9D7A00EF8194 /* Coin.swift */; };
+		7E157BC62DBD9D9000EF8194 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BC52DBD9D9000EF8194 /* CoinDataService.swift */; };
+		7E157BC82DBD9DAE00EF8194 /* CoinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BC72DBD9DAE00EF8194 /* CoinsViewModel.swift */; };
+		7E157BCD2DBD9DD300EF8194 /* CartitaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BC92DBD9DD300EF8194 /* CartitaView.swift */; };
+		7E157BCE2DBD9DD300EF8194 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BCA2DBD9DD300EF8194 /* CarouselView.swift */; };
+		7E157BCF2DBD9DD300EF8194 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BCB2DBD9DD300EF8194 /* DetailView.swift */; };
+		7E157BD92DBDBA0400EF8194 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BD12DBDBA0300EF8194 /* Pie.swift */; };
+		7E157BDA2DBDBA0400EF8194 /* FlyingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BD22DBDBA0300EF8194 /* FlyingNumber.swift */; };
+		7E157BDB2DBDBA0400EF8194 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BD32DBDBA0300EF8194 /* CardView.swift */; };
+		7E157BDC2DBDBA0400EF8194 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BD42DBDBA0300EF8194 /* AspectVGrid.swift */; };
+		7E157BDD2DBDBA0400EF8194 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BD52DBDBA0300EF8194 /* Cardify.swift */; };
+		7E157BDE2DBDBA0400EF8194 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BD62DBDBA0300EF8194 /* EmojiMemoryGameView.swift */; };
+		7E157BDF2DBDBA0400EF8194 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BD72DBDBA0400EF8194 /* EmojiMemoryGame.swift */; };
+		7E157BE02DBDBA0400EF8194 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E157BD82DBDBA0400EF8194 /* MemoryGame.swift */; };
+		7EB4A7012DC15A520025AC76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4A7002DC15A520025AC76 /* ContentView.swift */; };
+		7EE06E9F2DC12C4600B9C2CA /* WavyBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE06E9E2DC12C4600B9C2CA /* WavyBorder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E157BB02DBD9C2C00EF8194 /* swiftUI_Portfolios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUI_Portfolios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E157BB32DBD9C2C00EF8194 /* swiftUI_PortfoliosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUI_PortfoliosApp.swift; sourceTree = "<group>"; };
+		7E157BB72DBD9C2E00EF8194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E157BBA2DBD9C2E00EF8194 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E157BC12DBD9D7A00EF8194 /* CoinAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinAPIError.swift; sourceTree = "<group>"; };
+		7E157BC22DBD9D7A00EF8194 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		7E157BC52DBD9D9000EF8194 /* CoinDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		7E157BC72DBD9DAE00EF8194 /* CoinsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
+		7E157BC92DBD9DD300EF8194 /* CartitaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartitaView.swift; sourceTree = "<group>"; };
+		7E157BCA2DBD9DD300EF8194 /* CarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		7E157BCB2DBD9DD300EF8194 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7E157BD12DBDBA0300EF8194 /* Pie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		7E157BD22DBDBA0300EF8194 /* FlyingNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingNumber.swift; sourceTree = "<group>"; };
+		7E157BD32DBDBA0300EF8194 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7E157BD42DBDBA0300EF8194 /* AspectVGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		7E157BD52DBDBA0300EF8194 /* Cardify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
+		7E157BD62DBDBA0300EF8194 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
+		7E157BD72DBDBA0400EF8194 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
+		7E157BD82DBDBA0400EF8194 /* MemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		7EB4A7002DC15A520025AC76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7EE06E9E2DC12C4600B9C2CA /* WavyBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavyBorder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E157BAD2DBD9C2C00EF8194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E157BA72DBD9C2C00EF8194 = {
+			isa = PBXGroup;
+			children = (
+				7E157BB22DBD9C2C00EF8194 /* swiftUI_Portfolios */,
+				7E157BB12DBD9C2C00EF8194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E157BB12DBD9C2C00EF8194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E157BB02DBD9C2C00EF8194 /* swiftUI_Portfolios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E157BB22DBD9C2C00EF8194 /* swiftUI_Portfolios */ = {
+			isa = PBXGroup;
+			children = (
+				7E157BB32DBD9C2C00EF8194 /* swiftUI_PortfoliosApp.swift */,
+				7EB4A6FD2DC159530025AC76 /* Service */,
+				7EB4A6FC2DC159260025AC76 /* ViewModels */,
+				7EB4A6FB2DC159200025AC76 /* Models */,
+				7EB4A6FA2DC159140025AC76 /* Views */,
+				7E157BB72DBD9C2E00EF8194 /* Assets.xcassets */,
+				7E157BB92DBD9C2E00EF8194 /* Preview Content */,
+			);
+			path = swiftUI_Portfolios;
+			sourceTree = "<group>";
+		};
+		7E157BB92DBD9C2E00EF8194 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7E157BBA2DBD9C2E00EF8194 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7EB4A6FA2DC159140025AC76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EB4A7002DC15A520025AC76 /* ContentView.swift */,
+				7E157BCB2DBD9DD300EF8194 /* DetailView.swift */,
+				7E157BC92DBD9DD300EF8194 /* CartitaView.swift */,
+				7E157BD62DBDBA0300EF8194 /* EmojiMemoryGameView.swift */,
+				7E157BD22DBDBA0300EF8194 /* FlyingNumber.swift */,
+				7E157BCA2DBD9DD300EF8194 /* CarouselView.swift */,
+				7E157BD42DBDBA0300EF8194 /* AspectVGrid.swift */,
+				7E157BD32DBDBA0300EF8194 /* CardView.swift */,
+				7EB4A6FF2DC159880025AC76 /* Shapes */,
+				7EB4A6FE2DC159770025AC76 /* ViewBuilders */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7EB4A6FB2DC159200025AC76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E157BD82DBDBA0400EF8194 /* MemoryGame.swift */,
+				7E157BC22DBD9D7A00EF8194 /* Coin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7EB4A6FC2DC159260025AC76 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7E157BD72DBDBA0400EF8194 /* EmojiMemoryGame.swift */,
+				7E157BC72DBD9DAE00EF8194 /* CoinsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7EB4A6FD2DC159530025AC76 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7E157BC52DBD9D9000EF8194 /* CoinDataService.swift */,
+				7E157BC12DBD9D7A00EF8194 /* CoinAPIError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7EB4A6FE2DC159770025AC76 /* ViewBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				7E157BD52DBDBA0300EF8194 /* Cardify.swift */,
+			);
+			path = ViewBuilders;
+			sourceTree = "<group>";
+		};
+		7EB4A6FF2DC159880025AC76 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				7E157BD12DBDBA0300EF8194 /* Pie.swift */,
+				7EE06E9E2DC12C4600B9C2CA /* WavyBorder.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E157BAF2DBD9C2C00EF8194 /* swiftUI_Portfolios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E157BBE2DBD9C2E00EF8194 /* Build configuration list for PBXNativeTarget "swiftUI_Portfolios" */;
+			buildPhases = (
+				7E157BAC2DBD9C2C00EF8194 /* Sources */,
+				7E157BAD2DBD9C2C00EF8194 /* Frameworks */,
+				7E157BAE2DBD9C2C00EF8194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swiftUI_Portfolios;
+			productName = swiftUI_Portfolios;
+			productReference = 7E157BB02DBD9C2C00EF8194 /* swiftUI_Portfolios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E157BA82DBD9C2C00EF8194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					7E157BAF2DBD9C2C00EF8194 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 7E157BAB2DBD9C2C00EF8194 /* Build configuration list for PBXProject "swiftUI_Portfolios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E157BA72DBD9C2C00EF8194;
+			productRefGroup = 7E157BB12DBD9C2C00EF8194 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E157BAF2DBD9C2C00EF8194 /* swiftUI_Portfolios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E157BAE2DBD9C2C00EF8194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E157BBB2DBD9C2E00EF8194 /* Preview Assets.xcassets in Resources */,
+				7E157BB82DBD9C2E00EF8194 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E157BAC2DBD9C2C00EF8194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E157BD92DBDBA0400EF8194 /* Pie.swift in Sources */,
+				7E157BC32DBD9D7A00EF8194 /* CoinAPIError.swift in Sources */,
+				7E157BDE2DBDBA0400EF8194 /* EmojiMemoryGameView.swift in Sources */,
+				7E157BCF2DBD9DD300EF8194 /* DetailView.swift in Sources */,
+				7E157BC82DBD9DAE00EF8194 /* CoinsViewModel.swift in Sources */,
+				7E157BE02DBDBA0400EF8194 /* MemoryGame.swift in Sources */,
+				7E157BC42DBD9D7A00EF8194 /* Coin.swift in Sources */,
+				7E157BDA2DBDBA0400EF8194 /* FlyingNumber.swift in Sources */,
+				7EB4A7012DC15A520025AC76 /* ContentView.swift in Sources */,
+				7EE06E9F2DC12C4600B9C2CA /* WavyBorder.swift in Sources */,
+				7E157BDF2DBDBA0400EF8194 /* EmojiMemoryGame.swift in Sources */,
+				7E157BCD2DBD9DD300EF8194 /* CartitaView.swift in Sources */,
+				7E157BDD2DBDBA0400EF8194 /* Cardify.swift in Sources */,
+				7E157BC62DBD9D9000EF8194 /* CoinDataService.swift in Sources */,
+				7E157BCE2DBD9DD300EF8194 /* CarouselView.swift in Sources */,
+				7E157BDB2DBDBA0400EF8194 /* CardView.swift in Sources */,
+				7E157BB42DBD9C2C00EF8194 /* swiftUI_PortfoliosApp.swift in Sources */,
+				7E157BDC2DBDBA0400EF8194 /* AspectVGrid.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7E157BBC2DBD9C2E00EF8194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E157BBD2DBD9C2E00EF8194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E157BBF2DBD9C2E00EF8194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"swiftUI_Portfolios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wololo.swiftUI-Portfolios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E157BC02DBD9C2E00EF8194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"swiftUI_Portfolios/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wololo.swiftUI-Portfolios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E157BAB2DBD9C2C00EF8194 /* Build configuration list for PBXProject "swiftUI_Portfolios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E157BBC2DBD9C2E00EF8194 /* Debug */,
+				7E157BBD2DBD9C2E00EF8194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E157BBE2DBD9C2E00EF8194 /* Build configuration list for PBXNativeTarget "swiftUI_Portfolios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E157BBF2DBD9C2E00EF8194 /* Debug */,
+				7E157BC02DBD9C2E00EF8194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E157BA82DBD9C2C00EF8194 /* Project object */;
+}
