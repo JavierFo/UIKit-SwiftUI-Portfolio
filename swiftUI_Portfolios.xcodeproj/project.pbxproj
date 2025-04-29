@@ -111,9 +111,9 @@
 				7E157BD62DBDBA0300EF8194 /* EmojiMemoryGameView.swift */,
 				7E157BD22DBDBA0300EF8194 /* FlyingNumber.swift */,
 				7E157BCA2DBD9DD300EF8194 /* CarouselView.swift */,
-				7E157BD42DBDBA0300EF8194 /* AspectVGrid.swift */,
 				7E157BD32DBDBA0300EF8194 /* CardView.swift */,
 				7EB4A6FF2DC159880025AC76 /* Shapes */,
+				7EB4A7062DC17B8B0025AC76 /* ViewModifiers */,
 				7EB4A6FE2DC159770025AC76 /* ViewBuilders */,
 			);
 			path = Views;
@@ -149,7 +149,7 @@
 		7EB4A6FE2DC159770025AC76 /* ViewBuilders */ = {
 			isa = PBXGroup;
 			children = (
-				7E157BD52DBDBA0300EF8194 /* Cardify.swift */,
+				7E157BD42DBDBA0300EF8194 /* AspectVGrid.swift */,
 			);
 			path = ViewBuilders;
 			sourceTree = "<group>";
@@ -161,6 +161,14 @@
 				7EE06E9E2DC12C4600B9C2CA /* WavyBorder.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		7EB4A7062DC17B8B0025AC76 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				7E157BD52DBDBA0300EF8194 /* Cardify.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
