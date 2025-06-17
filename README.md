@@ -12,6 +12,11 @@ iOS app to portray UIKit functionalities and other stuff...
 :-------------------------:|:-------------------------:
 ![ScreenRecording2025-06-17at1 22 02-ezgif com-speed](https://github.com/user-attachments/assets/7ccb0922-b6e1-428a-ab72-b699291d76e4)|![ScreenRecording2025-06-17at1 22 56-ezgif com-speed](https://github.com/user-attachments/assets/0eeeabd6-de9b-4c6b-9cbd-d73d10db2d3e)
 
+|  Get User's followers & add to Favourites |  Delete Favourites   |
+:-------------------------:|:-------------------------:
+![ScreenRecording2025-06-17at1 24 46-ezgif com-speed](https://github.com/user-attachments/assets/4b7bf6a6-aaf0-41b8-a3d2-a384cc0a05cc)|![ScreenRecording2025-06-17at1 25 56-ezgif com-speed](https://github.com/user-attachments/assets/17694c36-8b39-44b7-a615-066e79b1972c)
+
+
 
 
 
