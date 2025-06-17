@@ -8,8 +8,10 @@ iOS app to portray SwiftUI functionalities and other stuff...
 # UIKit-Portfolio
 iOS app to portray UIKit functionalities and other stuff...
 
-|  Search GitHub account |  Cryptocurrencies List  |
+|  Search GitHub account |  Open Git Profile in Safari  |
 :-------------------------:|:-------------------------:
-![ScreenRecording2025-06-17at1 22 02-ezgif com-speed](https://github.com/user-attachments/assets/7ccb0922-b6e1-428a-ab72-b699291d76e4)
+![ScreenRecording2025-06-17at1 22 02-ezgif com-speed](https://github.com/user-attachments/assets/7ccb0922-b6e1-428a-ab72-b699291d76e4)|![ScreenRecording2025-06-17at1 22 56-ezgif com-speed](https://github.com/user-attachments/assets/0eeeabd6-de9b-4c6b-9cbd-d73d10db2d3e)
+
+
 
 
