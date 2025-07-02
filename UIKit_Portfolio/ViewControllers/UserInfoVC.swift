@@ -38,18 +38,32 @@ class UserInfoVC: UIViewController {
     }
     
     func getUserInfo() {
-        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
-            guard let self = self else { return }
-            switch result {
-            case .success(let user):
-                DispatchQueue.main.async {
-                    self.configureUIElements(with: user)
+        
+        Task {
+            do {
+                let user = try await NetworkManager.shared.getUserInfo(for: username)
+                configureUIElements(with: user)
+            } catch {
+                if let gfError = error as? GFError {
+                    presentGFAlert(title: "Something went wrong", message: gfError.rawValue, buttonTitle: "Ok")
+                } else {
+                    presentDefaultError()
                 }
-                
-            case.failure(let error):
-                self.presentGFAlertOnMainThread(title: "Something wrong..", message: error.rawValue, buttonTitle: "Ok")
             }
         }
+        
+//        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
+//            guard let self = self else { return }
+//            switch result {
+//            case .success(let user):
+//                DispatchQueue.main.async {
+//                    self.configureUIElements(with: user)
+//                }
+//
+//            case.failure(let error):
+//                self.presentGFAlertOnMainThread(title: "Something wrong..", message: error.rawValue, buttonTitle: "Ok")
+//            }
+//        }
     }
     
     func configureUIElements(with user: User) {
@@ -119,7 +133,7 @@ class UserInfoVC: UIViewController {
 extension UserInfoVC: UserInfoVCDelegate {
     func didTapGithubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
-            presentGFAlertOnMainThread(title: "Invalid url", message: "This URL is invalid", buttonTitle: "Ok")
+            presentGFAlert(title: "Invalid url", message: "This URL is invalid", buttonTitle: "Ok")
             return
         }
         presentSafariVC(with: url)
@@ -127,7 +141,7 @@ extension UserInfoVC: UserInfoVCDelegate {
     
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
-            presentGFAlertOnMainThread(title: "No followers", message: "User has no followers", buttonTitle: "Sad")
+            presentGFAlert(title: "No followers", message: "User has no followers", buttonTitle: "Sad")
             return
         }
         delegate.didRequestFollowers(for: user.login)

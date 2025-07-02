@@ -52,26 +52,61 @@ class FollowerListVC: UIViewController, UICollectionViewDelegate {
     
     @objc func addButtonTapped(){
         showLoadingView()
-        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
-            guard let self = self else { return }
-            self.dismissLoadingView()
-                
-            switch result {
-            case .success(let user):
-                let favourite = Follower(login: user.login, avatarUrl: user.avatarUrl)
-                PersistenceManager.updateWith(favourite: favourite, actionType: .add) { [weak self] error in
-                    guard let self = self else { return }
-                            
-                    guard let error = error else {
-                        self.presentGFAlertOnMainThread(title: "Success!", message: "You faved this user!", buttonTitle: "Yeah")
-                        return
-                    }
-                    
-                    self.presentGFAlertOnMainThread(title: "You've already added this user", message: error.rawValue, buttonTitle: "Ok")
+        
+        Task {
+            do {
+                let user = try await NetworkManager.shared.getUserInfo(for: username)
+                addUserToFavourites(user: user)
+                dismissLoadingView()
+            } catch {
+                if let gfError = error as? GFError {
+                    presentGFAlert(title: "Something went wrong", message: gfError.rawValue, buttonTitle: "Ok")
+                } else {
+                    presentDefaultError()
                 }
                 
-            case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+                dismissLoadingView()
+            }
+        }
+        
+//        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
+//            guard let self = self else { return }
+//            self.dismissLoadingView()
+//
+//            switch result {
+//            case .success(let user):
+//                let favourite = Follower(login: user.login, avatarUrl: user.avatarUrl)
+//                PersistenceManager.updateWith(favourite: favourite, actionType: .add) { [weak self] error in
+//                    guard let self = self else { return }
+//
+//                    guard let error = error else {
+//                        self.presentGFAlertOnMainThread(title: "Success!", message: "You faved this user!", buttonTitle: "Yeah")
+//                        return
+//                    }
+//
+//                    self.presentGFAlertOnMainThread(title: "You've already added this user", message: error.rawValue, buttonTitle: "Ok")
+//                }
+//
+//            case .failure(let error):
+//                self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+//            }
+//        }
+    }
+    
+    func addUserToFavourites(user: User) {
+        let favourite = Follower(login: user.login, avatarUrl: user.avatarUrl)
+        PersistenceManager.updateWith(favourite: favourite, actionType: .add) { [weak self] error in
+            guard let self = self else { return }
+                    
+            guard let error = error else {
+                DispatchQueue.main.async {
+                    self.presentGFAlert(title: "Success!", message: "You faved this user!", buttonTitle: "Yeah")
+                }
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.presentGFAlert(title: "You've already added this user", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }
@@ -101,29 +136,69 @@ class FollowerListVC: UIViewController, UICollectionViewDelegate {
         navigationItem.searchController = searchController
     }
     
+    //@MainActor - objects that are routed to the main thread
+    // structured concurrency: codes happen from top to bottom (like procedural C programming)
+    // unstructured concurrency: asynchronous outputs happen out of order
     func getFollowers(username: String, page: Int) {
         showLoadingView()
-        NetworkManager.shared.getFollowers(for: username, page: page)  { [weak self] result in
-            
-            guard let self = self else { return }
-            self.dismissLoadingView()
-            switch result {
-                case .success(let followers):
-                    if followers.count < 50 { self.hasMoreFollowers = false }
-                    self.followers.append(contentsOf: followers)
-                
-                if self.followers.isEmpty {
-                    let message = "User without followers. Go follow them!"
-                    DispatchQueue.main.async {
-                        self.showEmptyStateView(with: message, in: self.view)
-                    }
-                    return 
+        
+        Task {
+            do {
+                let followers = try await NetworkManager.shared.getFollowers(for: username, page: page)
+                updateUI(with: followers)
+                dismissLoadingView()
+            } catch {
+                if let gfError = error as? GFError {
+                    self.presentGFAlert(title: "Bad stuff happened", message: gfError.rawValue, buttonTitle: "Ok")
+                } else {
+                    presentDefaultError()
                 }
-                self.updateData(on: self.followers)
-                case .failure(let error):
-                    self.presentGFAlertOnMainThread(title: "Bad stuff happened", message: error.rawValue, buttonTitle: "Ok")
+
+                dismissLoadingView()
             }
+            
+//            guard let followers = try? await NetworkManager.shared.getFollowers(for: username, page: page) else {
+//                presentDefaultError()
+//                dismissLoadingView()
+//                return
+//            }
+//
+//            updateUI(with: followers)
+//            dismissLoadingView()
         }
+//        NetworkManager.shared.getFollowers(for: username, page: page)  { [weak self] result in
+//            guard let self = self else { return }
+//            self.dismissLoadingView()
+//            switch result {
+//                case .success(let followers):
+//                    if followers.count < 50 { self.hasMoreFollowers = false }
+//                    self.followers.append(contentsOf: followers)
+//
+//                if self.followers.isEmpty {
+//                    let message = "User without followers. Go follow them!"
+//                    DispatchQueue.main.async {
+//                        self.showEmptyStateView(with: message, in: self.view)
+//                    }
+//                    return
+//                }
+//                self.updateData(on: self.followers)
+//                case .failure(let error):
+//                    self.presentGFAlertOnMainThread(title: "Bad stuff happened", message: error.rawValue, buttonTitle: "Ok")
+//            }
+//        }
+    }
+    
+    func updateUI(with followers: [Follower]) {
+        if followers.count < 50 { self.hasMoreFollowers = false }
+        self.followers.append(contentsOf: followers)
+
+        if self.followers.isEmpty {
+            let message = "User without followers. Go follow them!"
+            DispatchQueue.main.async {
+                self.showEmptyStateView(with: message, in: self.view) }
+            return
+        }
+        self.updateData(on: self.followers)
     }
     
     func configureDataSource() {

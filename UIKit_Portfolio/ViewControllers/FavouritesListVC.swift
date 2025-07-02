@@ -57,7 +57,9 @@ class FavouritesListVC: UIViewController {
                     }
                 }
             case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Something wrong", message: error.rawValue, buttonTitle: "Ok")
+                DispatchQueue.main.async {
+                    self.presentGFAlert(title: "Something wrong", message: error.rawValue, buttonTitle: "Ok")
+                }
             }
         }
     }
@@ -95,7 +97,9 @@ extension FavouritesListVC: UITableViewDelegate, UITableViewDataSource {
             guard let self = self else { return }
             guard let error = error else { return }
             
-            self.presentGFAlertOnMainThread(title: "Unable to remove", message: error.rawValue, buttonTitle: "Ok")
+            DispatchQueue.main.async {
+                self.presentGFAlert(title: "Unable to remove", message: error.rawValue, buttonTitle: "Ok")
+            }
         }
     }
     
